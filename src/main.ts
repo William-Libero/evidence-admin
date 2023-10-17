@@ -6,7 +6,7 @@ async function bootstrap() {
   app.enableCors({
     allowedHeaders: '*',
     origin: '*',
-    credentials: true,
+    credentials: false,
   });
   await app.listen(process.env.PORT || 8080);
 }
